@@ -1,3 +1,5 @@
+// Eddy Bastidas Suma de dos números en flutter
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -36,7 +38,7 @@ class _SumScreenState extends State<SumScreen> {
     final num1 = double.tryParse(_numero1Controller.text) ?? 0;
     final num2 = double.tryParse(_numero2Controller.text) ?? 0;
     final suma = num1 + num2;
-    
+
     setState(() {
       _resultado = 'Resultado: $suma';
     });
@@ -89,9 +91,7 @@ class _SumScreenState extends State<SumScreen> {
                 ),
                 ElevatedButton(
                   onPressed: _limpiar,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey,
-                  ),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.grey),
                   child: const Text('Limpiar'),
                 ),
               ],
